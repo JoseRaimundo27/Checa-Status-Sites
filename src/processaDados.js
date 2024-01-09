@@ -15,10 +15,10 @@ export async function getStatusLinks(url) {
     return arrayStatus
 }
 export async function getJsonComStatus(json,statusLinks){
-    const objetoNovo = json.map( (objeto,indice) => {
-        objeto["status"] = statusLinks[indice]
-        return objeto
-    })
+    const objetoNovo = json.map( (objeto,indice) => ({
+        ...objeto,
+        status: statusLinks[indice]
+    }))
     return objetoNovo
 }
 export async function getLinks(path) {
