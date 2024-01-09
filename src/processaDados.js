@@ -5,7 +5,6 @@ export async function getStatusLinks(url) {
     const arrPromises = url.map((link) => {
         return fetch(link)
     })
-
     //Resolvendo o array de promises
     const arrayStatus = await Promise.all(arrPromises).then((values) => {
         const arrStatus = values.map((obj) => {
@@ -13,8 +12,14 @@ export async function getStatusLinks(url) {
         })
         return arrStatus
     })
-
     return arrayStatus
+}
+export async function getJsonComStatus(json,statusLinks){
+    const objetoNovo = json.map( (objeto,indice) => {
+        objeto["status"] = statusLinks[indice]
+        return objeto
+    })
+    return objetoNovo
 }
 export async function getLinks(path) {
     try {
