@@ -20,19 +20,26 @@ body{
   justify-content: center;
 
 }
+
 .container__tabela{
   border: 2px solid var(--cor-quartenaria);
+
+  
 }
 .container__tabela__titulo{
   color: var(--cor-secundaria);
   background-color: var(--cor-terciaria);
-  font-size: 2rem;
-  padding: 1.25rem;
+  
+  padding: 1rem;
   font-weight: 800;
+
 }
+
 .container__tabela__conteudo{
+  width: 100%;
   color: var(--cor-quartenaria);
+  text-align: center;
   font-weight: 300;
   font-size: 1.5rem;
   padding: 1.25rem;
-}
+} 

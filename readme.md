@@ -4,7 +4,7 @@ Sistema de monitoramento de sites, se está ou não no ar
 
 ## TO-DO:
 
-- MUDAR FORMA COMO EU PEGO OS DADOS, (o processad dados ainda é necessário para resolver o fecth)
+- TROCAR O USO DE FETCH POR EXPRESS E RESOLVER PROBLEMA DE CORS! -> descobrir o retorno de axios.get()
 - Retorno de objeto com nome/url/status
 
 - Verificador de status que retorna "Ok" ou "Fora do ar"
