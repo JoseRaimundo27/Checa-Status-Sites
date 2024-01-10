@@ -4,7 +4,7 @@ Sistema de monitoramento de sites, se está ou não no ar
 
 ## TO-DO:
 
-
+- MUDAR FORMA COMO EU PEGO OS DADOS, (o processad dados ainda é necessário para resolver o fecth)
 - Retorno de objeto com nome/url/status
 
 - Verificador de status que retorna "Ok" ou "Fora do ar"

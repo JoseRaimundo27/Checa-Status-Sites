@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --cor-primaria: #3D3B40;
+  --cor-secundaria: #525CEB;
+  --cor-terciaria: #BFCFE7;
+  --cor-quartenaria: #F8EDFF;
+}
+body{
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.container__tabela{
+  border: 2px solid var(--cor-quartenaria);
+}
+.container__tabela__titulo{
+  color: var(--cor-secundaria);
+  background-color: var(--cor-terciaria);
+  font-size: 2rem;
+  padding: 1.25rem;
+  font-weight: 800;
+}
+.container__tabela__conteudo{
+  color: var(--cor-quartenaria);
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1.25rem;
+}
